@@ -1,0 +1,92 @@
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dev-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 50%;
+  min-height: 50%;
+  padding: 5% 6%;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  border-bottom: 0.1rem solid gray;
+}
+
+.about-text {
+  font-size: clamp(1.3rem, 1.4vw, 1.6rem);
+}
+
+.dev-acounts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11%;
+  height: 5rem;
+  width: 90%;
+  margin-top: 1rem;
+  border: 0.1rem solid gray;
+  border-radius: 1.5rem;
+  box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.3);
+}
+
+.account-link {
+  transition: transform 0.2s ease-in-out;
+}
+.account-link:hover {
+  transform: scale(1.1);
+}
+.account-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.account-tooltip {
+  position: absolute;
+  bottom: -100%;
+  font-size: 0.8rem;
+
+  background-color: rgb(107, 107, 107);
+  color: rgb(200, 200, 200);
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(188, 188, 188);
+  padding: 0.2rem 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.account-container:hover .account-tooltip {
+  opacity: 1;
+}

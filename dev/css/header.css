@@ -1,0 +1,87 @@
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(64, 64, 64);
+  border-bottom: 0.1rem solid rgb(94, 94, 94);
+  padding: 0 5%;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.5rem, 2.1vw, 2rem);
+  color: white;
+}
+.home-page-link {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(204, 204, 204);
+}
+.home-page-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: clamp(0.3rem, 1vw, 0.4rem) clamp(0.5rem, 1.2vw, 0.6rem);
+  background-color: rgba(130, 129, 129, 0.5);
+  border-radius: 1.5rem;
+  border: 0.1rem solid white;
+  transition: padding-left 0.3s ease-in-out;
+}
+
+.home-page-text {
+  opacity: 0;
+  font-size: clamp(0.8rem, 0.9vw, 1rem);
+  transition: 0.4s ease-in-out;
+}
+.back-icon {
+  height: 1.2rem;
+  width: clamp(1.3rem, 1.7vw, 1.4rem);
+  position: absolute;
+  left: 40%;
+  transition: left 0.3s ease-in-out;
+}
+.dev-name-link{
+  text-decoration: none;
+}
+.dev-name {
+  position: relative;
+  color: rgb(205, 205, 205);
+  font-weight: 500;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  
+}
+
+.home-page-container:hover {
+  padding-left: 2rem;
+}
+.home-page-container:hover .back-icon {
+  left: 5%;
+}
+.home-page-container:hover .home-page-text {
+  opacity: 1;
+}
+
+.dev-name::before {
+  position: absolute;
+  content: "";
+  height: 0.2rem;
+  width: 0;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
+  background: linear-gradient(
+    to right,
+    rgb(255, 214, 0),
+    rgba(255, 214, 0, 0.6),
+    rgba(255, 214, 0, 0.4) 
+  );
+  transition: width 0.2s ease-in-out;
+}
+
+.dev-name:hover::before{
+  width: 100%;
+}
