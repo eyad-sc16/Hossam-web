@@ -122,7 +122,107 @@ h2 {
   justify-content: center;
   gap: 1%;
 }
-.projects-section {
+.label-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+}
+.label-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.label-box label {
+  cursor: pointer;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  text-wrap: nowrap;
+  transition: all 0.2s ease-in-out;
+}
+
+.label-box label:hover {
+  transform: scale(1.1);
+  color: #6c63ff;
+}
+.label-box::before {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 0;
+  height: 0.1rem;
+  transition: width 0.2s ease-in-out;
+}
+
+.label-box:hover::before {
+  width: 100%;
+}
+.all-label-box::before {
+  background: linear-gradient(to right, #20498a, rgb(32, 27, 130), #3167bf);
+}
+
+.all-label-box label:hover {
+  color: #3167bf;
+}
+
+.sql-label-box::before {
+  background: linear-gradient(to right, #be7c0b, #543809, #84570b);
+}
+
+.sql-label-box label:hover {
+  color: #84570b;
+}
+
+.python-label-box::before {
+  background: linear-gradient(to right, #433dad, #6c63ff, #1d1699);
+}
+
+.python-label-box label:hover {
+  color: #6c63ff;
+}
+.power-pi-label-box::before {
+  background: linear-gradient(
+    to right,
+    rgb(213, 223, 20),
+    rgb(196, 206, 3),
+    rgb(109, 114, 14)
+  );
+}
+
+.power-pi-label-box label:hover {
+  color: rgb(93, 97, 11);
+}
+input[type="radio"] {
+  display: none;
+}
+
+.projects-section #python:checked ~ .inner-projects-section .project-box,
+.projects-section #sql:checked ~ .inner-projects-section .project-box,
+.projects-section #all:checked ~ .inner-projects-section .project-box,
+.projects-section #power-pi:checked ~ .inner-projects-section .project-box {
+  display: none;
+}
+
+.projects-section #python:checked ~ .inner-projects-section .python-box {
+  display: block;
+}
+
+.projects-section #sql:checked ~ .inner-projects-section .sql-box {
+  display: block;
+}
+
+.projects-section #power-pi:checked ~ .inner-projects-section .power-pi-box {
+  display: block;
+}
+
+.projects-section #all:checked ~ .inner-projects-section .project-box {
+  display: block;
+}
+.projects-section,
+.reports-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,27 +269,69 @@ h2 {
   border: 0.1rem solid gray;
   border-radius: 17px;
   transition: all 0.2s ease-in-out;
+  overflow: hidden;
 }
 
 .project-box:hover {
-  box-shadow: 0.2rem 0.2rem 10px rgba(79, 57, 124, 0.6);
+  box-shadow: 0.4rem 0.4rem 10px rgba(79, 57, 124, 0.7);
   border: 0.1rem solid #4f397c;
 }
 
-.inner-projects-section .little-box p{
+.inner-projects-section .little-box p {
   font-size: 0.7rem;
 }
 
-.inner-projects-section .little-box .project-title p{
+.inner-projects-section .little-box .project-title p {
   font-size: clamp(0.8rem, 1vw, 0.9rem);
 }
 .project-thampnail {
-  object-fit: contain;
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 55%;
-  box-shadow: inset 1px -4px 20px rgba(9, 9, 9, 0.6);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+.thampnail-image {
+  width: 100%;
+}
+.thampnail-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: nowrap;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 45, 76, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.project-box:hover .thampnail-info {
+  visibility: visible;
+  opacity: 1;
+}
+.thampnail-buttons {
+  background: linear-gradient(to right, #122036, #233e69, #284677);
+  font-size: clamp(0.7rem, 1vw, 1rem);
+  padding: 0.3rem;
+  border-radius: 1.2rem;
+  color: white;
+  font-family: "Inter", Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  border: 0.1rem solid #a1a1a1;
+  transition: all 0.2s ease-in-out;
+}
+
+.thampnail-buttons:hover {
+  scale: 1.06;
+  background: linear-gradient(to right, #284677, #233e69, #122036);
 }
 
 .project-info {
@@ -197,7 +339,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #392b56;
+  background-color: #1a2d4c;
   height: 45%;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -222,12 +364,12 @@ h2 {
 }
 
 .project-tools p {
-  background-color: #4f397c;
-  color: white;
+  background-color: rgba(24, 62, 118, 0.6);
+  color: #ffffff;
   font-size: clamp(0.7rem, 1vw, 1rem);
   padding: 0.3rem;
   border-radius: 2rem;
-  border: 0.1rem solid #84570b;
+  border: 0.1rem solid rgb(194, 194, 194);
   text-wrap: nowrap;
 }
 
@@ -240,7 +382,7 @@ h2 {
 }
 .project-description p {
   text-align: center;
-  color: whitesmoke;
+  color: rgb(200, 200, 200);
   font-family: "Inter", Roboto, Arial, Helvetica, sans-serif;
 }
 .project-description::before {
@@ -257,12 +399,12 @@ h2 {
   align-items: center;
   gap: 1rem;
 }
-.github-icon{
+.github-icon {
   width: 20px;
-  transition: scale 0.2s ease-in-out ;
+  transition: scale 0.2s ease-in-out;
 }
 
-.github-icon:hover{
+.github-icon:hover {
   scale: 1.1;
 }
 .project-source P {
@@ -271,96 +413,74 @@ h2 {
   transition: scale 0.2s ease-in-out;
 }
 
-.project-source P::before{
+.project-source P::before {
   position: absolute;
   bottom: 0;
   left: 0;
   content: "";
   height: 0.07rem;
   width: 0;
-  background: linear-gradient(to right , whitesmoke,white, gray );
+  background: linear-gradient(to right, whitesmoke, white, gray);
   z-index: 1;
   transition: width 0.2s ease-in-out;
 }
-.project-source P:hover::before{
+.project-source P:hover::before {
   width: 100%;
 }
 
-.project-source P:hover{
+.project-source P:hover {
   scale: 1.1;
 }
-.project-source a{
+.project-source a {
   text-decoration: none;
   color: rgb(161, 161, 161);
   font-weight: 500;
 }
 
-
-.label-box {
+.inner-report-section {
+  width: 80%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 4rem;
+  height: fit-content;
 }
-.label-box {
-  position: relative;
-  cursor: pointer;
+.reports-section input[type="checkbox"] {
+  display: none;
 }
-
-.label-box label {
-  cursor: pointer;
-  width: 4rem;
+.report-box {
   display: flex;
-  justify-content: center;
-  font-weight: 500;
-  text-wrap: nowrap;
-  transition: all 0.2s ease-in-out;
-}
-
-.label-box label:hover {
-  transform: scale(1.1);
-  color: #6c63ff;
-}
-.label-box::before {
-  content: "";
-  position: absolute;
-  bottom: -10%;
-  left: 0;
-  width: 0;
-  height: 0.1rem;
-  background: linear-gradient(to right, #6c63ff, #1a1666);
-  transition: width 0.2s ease-in-out;
-}
-
-.label-box:hover::before {
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
-
-input[type="radio"] {
+.report-content {
+  height: 20px;
+  width: 333px;
+  background-color: #1a2d4c;
   display: none;
 }
-
-.projects-section #python:checked ~ .inner-projects-section .project-box,
-.projects-section #sql:checked ~ .inner-projects-section .project-box,
-.projects-section #all:checked ~ .inner-projects-section .project-box,
-.projects-section #power-pi:checked ~ .inner-projects-section .project-box {
-  display: none;
+.reports-section #report-1:checked ~ .inner-report-section .report-1-content {
+  display: flex;
 }
 
-.projects-section #python:checked ~ .inner-projects-section .python-box {
-  display: block;
+.reports-section #report-2:checked ~ .inner-report-section .report-2-content {
+  display: flex;
 }
 
-.projects-section #sql:checked ~ .inner-projects-section .sql-box {
-  display: block;
+.reports-section #report-3:checked ~ .inner-report-section .report-3-content {
+  display: flex;
 }
 
-.projects-section #power-pi:checked ~ .inner-projects-section .power-pi-box {
-  display: block;
+.reports-section #report-4:checked ~ .inner-report-section .report-4-content {
+  display: flex;
 }
 
-.projects-section #all:checked ~ .inner-projects-section .project-box {
-  display: block;
+.reports-section #report-5:checked ~ .inner-report-section .report-5-content {
+  display: flex;
+}
+
+.reports-section #report-6:checked ~ .inner-report-section .report-6-content {
+  display: flex;
 }
 
 @media (max-width: 480px) {
