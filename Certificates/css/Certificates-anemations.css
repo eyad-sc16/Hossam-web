@@ -218,3 +218,7 @@ h3 {
 .year-box {
   animation: fadeInUp 2s ease-in-out;
 }
+
+.logo-box:hover .logo-tooltip {
+  animation: dowen-appear 0.2s linear;
+}

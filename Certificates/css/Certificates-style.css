@@ -1,4 +1,4 @@
-﻿.certificate-display {
+.certificate-display {
   height: clamp(35rem, 50vh, 41rem);
   width: clamp(30rem, 60vw, 53rem);
   position: fixed;
@@ -569,7 +569,6 @@ h3 {
 }
 
 .logo-box:hover .logo-tooltip {
-  animation: dowen-appear 0.2s linear;
   opacity: 1;
 }
 
