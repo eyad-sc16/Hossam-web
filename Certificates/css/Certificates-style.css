@@ -41,33 +41,6 @@
   color: black;
 }
 
-.floating-button {
-  position: fixed;
-  right: 1.5%;
-  bottom: 4%;
-  z-index: 1001;
-  background-color: #1e3a5f;
-  padding: 0.3rem;
-  border-radius: 999px;
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
-}
-
-.floating-button:hover {
-  transform: scale(1.03);
-  opacity: 0.94;
-}
-
-.inner-floating-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.45rem;
-  border: 0.1rem solid #ffffff;
-  border-radius: 999px;
-}
-
 main {
   width: 100%;
 }
@@ -714,11 +687,6 @@ h3 {
   }
   .certificates-box-info-side {
     padding: 1.5rem 0.5rem;
-  }
-
-  .floating-button,
-  .inner-floating-button {
-    padding: 0.2rem;
   }
 
   .intro-section {
