@@ -60,6 +60,6 @@ footer {
     gap: 15%;
   }
   .first-footer-part p {
-    text-wrap: wrap;
+    text-wrap: nowrap;
   }
 }

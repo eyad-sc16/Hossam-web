@@ -258,6 +258,7 @@ input[type="radio"] {
   width: 80%;
   height: fit-content;
   margin: 0 auto;
+  margin: 0 5%;
 }
 
 .project-box:nth-child(1) {
@@ -297,6 +298,10 @@ input[type="radio"] {
   border: 0.1rem solid #4f397c;
 }
 
+.project-box:hover .thampnail-image {
+  transform: scale(1.1);
+}
+
 .inner-projects-section .little-box p {
   font-size: 0.7rem;
 }
@@ -316,6 +321,7 @@ input[type="radio"] {
 }
 .thampnail-image {
   width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 .thampnail-info {
   display: flex;
@@ -523,7 +529,7 @@ h3 {
 
 .report-title {
   font-family: "Inter", Roboto, Arial, Helvetica, sans-serif;
-  font-size: clamp(1rem, 2vw, 1.7rem);
+  font-size: clamp(0.95rem, 2vw, 1.7rem);
   color: #1a2d4c;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -533,7 +539,13 @@ h3 {
   color: #f0eeff;
   scale: 1.01;
 }
+.title-box:hover svg {
+  fill: #ffffff;
+}
 
+.title-box svg {
+  transition: fill 0.3s ease-out;
+}
 .title-box:hover {
   border-color: #e89a0a;
 }
@@ -608,8 +620,7 @@ h3 {
   line-height: 1.6rem;
 }
 
-.parts-title
-{
+.parts-title {
   font-size: clamp(1.2rem, 1.3vw, 1.3rem);
   font-weight: 500;
   color: #06b6d4;
@@ -626,7 +637,7 @@ h3 {
 }
 .links-parts {
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: center;
   gap: clamp(5rem, 9vw, 9rem);
 }
@@ -646,14 +657,12 @@ h3 {
   color: #9953c4;
 }
 
-.sql-links{
+.sql-links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.8rem;
 }
-
-
 
 .reources-container {
   display: flex;
@@ -698,7 +707,7 @@ h3 {
   justify-content: center;
   width: fit-content;
   height: clamp(3rem, 4.6vw, 4.2rem);
-  font-size: clamp(0.8rem, 1.1vw ,1.1rem);
+  font-size: clamp(0.8rem, 1.1vw, 1.1rem);
   font-weight: 500;
   border: 0.2rem solid #0663d4;
   padding: 0.3rem;
@@ -713,7 +722,6 @@ h3 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .reports-section #report-1:checked ~ .inner-report-section .report-1-content {
   display: flex;
@@ -794,19 +802,18 @@ h3 {
   }
 
   .report-box-project-3 .video-box {
-    object-position: left ;
+    object-position: left;
   }
 
   .report-box-project-3 .inner-reources-container,
-  .report-box-project-4 .inner-reources-container
-  {
+  .report-box-project-4 .inner-reources-container {
     gap: 0.5rem;
   }
 
-.sql-links{
-  flex-direction: column;
-}
-
+  .sql-links {
+    flex-direction: column;
+  }
+  
 }
 
 @media (min-width: 700px) and (max-width: 1050px) {

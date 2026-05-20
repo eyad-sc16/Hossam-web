@@ -9,94 +9,6 @@
   }
 }
 
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-1.875rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-3.125rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(3.125rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(1.875rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes scaleIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.85);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes dowen-appear {
-  0% {
-    bottom: 10%;
-    scale: 0.7;
-    opacity: 0.5;
-  }
-
-  50% {
-    bottom: -30%;
-    scale: 0.9;
-    opacity: 0.8;
-  }
-
-  100% {
-    bottom: -60%;
-    scale: 1;
-    opacity: 1;
-  }
-}
-
-
-
 .home-page-link {
   animation: fadeInLeft 0.8s ease-in-out;
 }
@@ -131,11 +43,17 @@ h1 {
   animation: fadeInLeft 1.4s ease-in-out;
 }
 
+h3{
+  animation: fadeInUp 0.9s ease-in-out;
+}
+
+
 .projects-nums {
   animation: fadeInRight 1.4s ease-in-out;
 }
 
-.filter-box {
+.filter-box,
+.reports-filter-container {
   animation: fadeInUp 1.4s ease-in-out;
 }
 
@@ -197,3 +115,4 @@ h1 {
 .title-box-6 {
   animation: fadeInUp 1.6s ease-in-out;
 }
+
