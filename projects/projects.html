@@ -20,10 +20,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/keyframes.css">
   <link rel="stylesheet" href="css/projects-animations.css">
   <link rel="stylesheet" href="css/projects-style.css">
   <link rel="stylesheet" href="css/project-header.css">
-  <link rel="stylesheet" href="../home-page/css/base.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/floating-button.css">
   <link rel="stylesheet" href="css/project-general.css">
   <link rel="stylesheet" href="css/project-footer.css">
   <meta charset="UTF-8">
@@ -32,6 +34,17 @@
 </head>
 
 <body>
+  <a href="#sup-header">
+    <div class="floating-button">
+      <div class="inner-floating-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
+          <path
+            d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z">
+          </path>
+        </svg>
+      </div>
+    </div>
+  </a>
   <header class="header" id="header">
     <div class="main-header">
       <div class="left-side">
@@ -53,7 +66,7 @@
           <div class="report-container">
             <span>Reports</span>
           </div>
-          <img class="report-icon" src="../Certificates/Certificates-file-icons/tools-icon.gif" alt="Courses icon">
+          <img class="link-icons" src="icons/reports-icon.png" alt="Courses icon">
         </a>
       </div>
     </div>
@@ -65,13 +78,13 @@
       <a class="Certificates-link-container sup-links" href="../Certificates/Certificates.html">
         <div class="Certificates-container buttons-div">
           <p class="sup-links-text">Certificates</p>
-          <img class="link-icons" src="../Certificates/Certificates-file-icons/projects-icon.gif" alt="Projects icon">
+          <img class="link-icons" src="icons/cirtifiates-icon.png" alt="Projects icon">
         </div>
       </a>
       <a class="skills-link-container sup-links" href="../index.html#about">
         <div class="skills-container buttons-div">
           <p class="sup-links-text">Skills</p>
-          <img class="link-icons" src="../Certificates/Certificates-file-icons/skills-icon.gif" alt="Skills icon">
+          <img class="link-icons" src="../assets/icons/skiils-icon.png" alt="Skills icon">
         </div>
       </a>
     </div>
@@ -155,7 +168,7 @@
         </div>
         <div class="project-2 project-box little-box power-pi-box">
           <div class="project-thampnail">
-            <img class="thampnail-image" src="images/power-pi-image(2).png" alt="">
+            <img class="thampnail-image" src="images/power-pi-image-2.png" alt="">
             <div class="thampnail-info">
               <a class="thampnail-discription-button thampnail-buttons" href="">Full Reveiw</a>
               <a class="thampnail-gitub-button thampnail-buttons"
@@ -186,7 +199,7 @@
         </div>
         <div class="project-3 project-box little-box python-box">
           <div class="project-thampnail">
-            <img class="thampnail-image" src="" alt="">
+            <img class="thampnail-image" src="images/python-image.png" alt="">
             <div class="thampnail-info">
               <a class="thampnail-discription-button thampnail-buttons" href="">Full Reveiw</a>
               <a class="thampnail-gitub-button thampnail-buttons"
@@ -220,7 +233,7 @@
         </div>
         <div class="project-4 project-box python-box">
           <div class="project-thampnail">
-            <img class="thampnail-image" src="" alt="">
+            <img class="thampnail-image" src="images/python-image-2.png" alt="">
             <div class="thampnail-info">
               <a class="thampnail-discription-button thampnail-buttons" href="">Full Reveiw</a>
               <a class="thampnail-gitub-button thampnail-buttons"
@@ -252,7 +265,7 @@
         </div>
         <div class="project-5 project-box sql-box">
           <div class="project-thampnail">
-            <img class="thampnail-image" src="" alt="">
+            <img class="thampnail-image" src="images/sql-image.png" alt="">
             <div class="thampnail-info">
               <a class="thampnail-discription-button thampnail-buttons" href="">Full Reveiw</a>
               <a class="thampnail-gitub-button thampnail-buttons"
@@ -282,7 +295,7 @@
         </div>
         <div class="project-6 project-box little-box sql-box">
           <div class="project-thampnail">
-            <img class="thampnail-image" src="" alt="">
+            <img class="thampnail-image" src="images/sql-image-2.png" alt="">
             <div class="thampnail-info">
               <a class="thampnail-discription-button thampnail-buttons" href="">Full Reveiw</a>
               <a class="thampnail-gitub-button thampnail-buttons"
@@ -349,11 +362,18 @@
         <div class="report-box-project-1 report-box power-pi-report-box">
           <div class="title-box title-box-1">
             <label class="report-title" for="report-1">Superstore-Sales-Analysis / Power-Bi</label>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+              <path
+                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+              </path>
+            </svg>
           </div>
           <div class="report-1-content report-content">
             <div class="video-box">
-              <video src="videos/power-pi-project-1.webm" autoplay playsinline preload="none" loading="lazy"  loop  controls></video>
-
+              <video autoplay muted loop playsinline preload="none" controls>
+                <source src="videos/power-pi-project-1.webm" type="video/webm">
+                <source src="videos/power-pi-project-1.avi" type="video/x-msvideo">
+              </video>
             </div>
             <div class="discription-box">
               <div class="discription-part-1 discription-parts">
@@ -421,13 +441,13 @@
             <p class="parts-title">Tools Used</p>
             <div class="reources-container">
               <div class="inner-reources-container">
-                <div class="logo-box"><img class="power-pi-logo" src="icons/power-bi-logo.png" alt="">
+                <div class="logo-box"><img class="power-pi-logo" src="../assets/icons/power-bi-logo.png" alt="">
                   <span class="power-pi-tooltip logo-tooltip"></span>
                 </div>
                 <div class="logo-box"><img class="csv-logo" src="icons/CSV-logo.png" alt="">
                   <span class="csv-tooltip logo-tooltip"></span>
                 </div>
-                <div class="logo-box"><img class="excel-logo" src="icons/excel-logo.png" alt="">
+                <div class="logo-box"><img class="excel-logo" src="../assets/icons/excel-logo.png" alt="">
                   <span class="excel-tooltip logo-tooltip"></span>
                 </div>
                 <div class="logo-box"><img class="Kaggle-logo" src="icons/Kaggle-logo.png" alt="">
@@ -450,10 +470,18 @@
         <div class="report-box-project-2 report-box power-pi-report-box">
           <div class="title-box title-box-2">
             <label class="report-title" for="report-2">Sales-Performance-Dashboard / Power-Bi</label>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+              <path
+                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+              </path>
+            </svg>
           </div>
           <div class="report-2-content report-content">
             <div class="video-box">
-              <video src="videos/power-pi-project-2.webm" autoplay playsinline preload="none" loading="lazy"  loop  controls></video>
+              <video autoplay muted loop playsinline preload="none" controls>
+                <source src="videos/power-pi-project-2.webm" type="video/webm">
+                <source src="videos/power-pi-project-2.avi" type="video/x-msvideo">
+              </video>
 
             </div>
             <div class="discription-box">
@@ -511,7 +539,7 @@
             <div class="reources-container">
               <div class="inner-reources-container">
 
-                <div class="logo-box"><img class="power-pi-logo" src="icons/power-bi-logo.png" alt="">
+                <div class="logo-box"><img class="power-pi-logo" src="../assets/icons/power-bi-logo.png" alt="">
                   <span class="power-pi-tooltip logo-tooltip"></span>
                 </div>
                 <div class="logo-box"><img class="Kaggle-logo" src="icons/Kaggle-logo.png" alt="">
@@ -530,17 +558,25 @@
             </div>
           </div>
         </div>
-
+ 
 
 
 
         <div class="report-box-project-3 report-box python-report-box">
           <div class="title-box title-box-3">
             <label class="report-title" for="report-3">Decoding Bank Churn — A Behavioral Analysis</label>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+              <path
+                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+              </path>
+            </svg>
           </div>
           <div class="report-3-content report-content">
             <div class="video-box">
-              <video src="videos/python-project-1.webm"autoplay playsinline preload="none" loading="lazy"  loop  controls> </video>
+              <video autoplay muted loop playsinline preload="none" controls>
+                <source src="videos/python-project-1.webm" type="video/webm">
+                <source src="videos/python-project-1.avi" type="video/x-msvideo">
+              </video>
 
             </div>
             <div class="discription-box">
@@ -602,6 +638,11 @@
         <div class="report-box-project-4 report-box python-report-box">
           <div class="title-box title-box-4">
             <label class="report-title" for="report-4">Student-Admission-Records-python / Python</label>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+              <path
+                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+              </path>
+            </svg>
           </div>
 
 
@@ -609,7 +650,10 @@
 
           <div class="report-4-content report-content">
             <div class="video-box">
-              <video src="videos/python-project-2.webm"autoplay playsinline preload="none" loading="lazy"  loop  controls></video>
+              <video autoplay muted loop playsinline preload="none" controls>
+                <source src="videos/python-project-2.webm" type="video/webm">
+                <source src="videos/python-project-2.avi" type="video/x-msvideo">
+              </video>
 
             </div>
             <div class="discription-box">
@@ -672,10 +716,18 @@
         <div class="report-box-project-5 report-box sql-report-box">
           <div class="title-box title-box-5">
             <label class="report-title" for="report-5">SQL Analytics Toolkit / SQL</label>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+              <path
+                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+              </path>
+            </svg>
           </div>
           <div class="report-5-content report-content">
             <div class="video-box">
-              <video src="videos/sql-project-1.webm" autoplay playsinline preload="none" loading="lazy"  loop  controls></video>
+              <video autoplay muted loop playsinline preload="none" controls>
+                <source src="videos/sql-project-1.webm" type="video/webm">
+                <source src="videos/sql-project-1.avi" type="video/x-msvideo">
+              </video>
             </div>
             <div class="discription-box">
               <div class="discription-part-1 discription-parts">
@@ -761,10 +813,18 @@
         <div class="report-box-project-6 report-box sql-report-box">
           <div class="title-box title-box-6">
             <label class="report-title" for="report-6">Business-Performance-SQL / SQL</label>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+              <path
+                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+              </path>
+            </svg>
           </div>
           <div class="report-6-content report-content">
             <div class="video-box">
-              <video src="videos/sql-project-1.webm"autoplay playsinline preload="none" loading="lazy"  loop  controls></video>
+              <video autoplay muted loop playsinline preload="none" controls>
+                <source src="videos/sql-project-2.webm" type="video/webm">
+                <source src="videos/sql-project-2.avi" type="video/x-msvideo">
+              </video>
 
             </div>
             <div class="discription-box">
@@ -864,14 +924,13 @@
           <p>Take a look</p>
         </div>
         <a href="https://github.com/hossam-ayman72" target="_blank" rel="noopener noreferrer"><img
-            class="github-footer-icon first-footer-part-icons" src="Certificates-file-icons/github-icon-footer.png"
+            class="github-footer-icon first-footer-part-icons" src="../assets/icons/github-icon-footer-cert.png"
             alt=""></a>
         <a href="https://www.linkedin.com/in/hossam-ayman-841728368?utm_source=share_via&utm_content=profile&utm_medium=member_android"
           target="_blank" rel="noopener noreferrer"><img class="linkedin-footer-icon first-footer-part-icons"
-            src="Certificates-file-icons/linkedin-icon-footer.png" alt=""></a>
+            src="../assets/icons/linkedin-icon-footer-cert.png" alt=""></a>
         <a href="https://www.kaggle.com/hosamyy" target="_blank" rel="noopener noreferrer"><img
-            class="kaggle-footer-icon first-footer-part-icons" src="Certificates-file-icons/kaggle-icon-footer.jpg"
-            alt=""></a>
+            class="kaggle-footer-icon first-footer-part-icons" src="../assets/icons/kaggle-icon-footer.jpg" alt=""></a>
       </div>
       <div class="last-footer-part">
         <div class="note-container">
