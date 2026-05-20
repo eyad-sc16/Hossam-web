@@ -43,10 +43,9 @@ h1 {
   animation: fadeInLeft 1.4s ease-in-out;
 }
 
-h3{
+h3 {
   animation: fadeInUp 0.9s ease-in-out;
 }
-
 
 .projects-nums {
   animation: fadeInRight 1.4s ease-in-out;
@@ -74,10 +73,6 @@ h3{
 
 .project-description {
   animation: fadeInUp 1.5s ease-in-out;
-}
-
-.github-icon {
-  animation: fadeInUp 1.6s ease-in-out;
 }
 
 .project-source p {
@@ -116,3 +111,32 @@ h3{
   animation: fadeInUp 1.6s ease-in-out;
 }
 
+.video-box {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.discription-part-1 {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+.discription-part-2 {
+  animation: fadeInUp 1s ease-in-out;
+}
+.discription-part-3 {
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.links-part-1 {
+  animation: fadeInUp 1.3s ease-in-out;
+}
+
+.links-part-2 {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.reources-container {
+  animation: fadeInUp 1.7s ease-in-out;
+}
+
+.final-link-container {
+  animation: fadeInUp 1.7s ease-in-out;
+}
