@@ -1,0 +1,40 @@
+.floating-button {
+  position: fixed;
+  right: 1.5%;
+  bottom: 4%;
+  z-index: 1001;
+  background-color: #1e3a5f;
+  padding: 0.3rem;
+  border-radius: 999px;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.floating-button:hover {
+  transform: scale(1.03);
+  opacity: 0.94;
+}
+
+.inner-floating-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem;
+  border: 0.1rem solid #ffffff;
+  border-radius: 999px;
+}
+
+@media (max-width: 480px) {
+  .floating-button {
+    padding: 0.2rem;
+  }
+
+  .inner-floating-button {
+    padding: 0.3rem;
+  }
+
+  .certificates-page .inner-floating-button {
+    padding: 0.2rem;
+  }
+}
