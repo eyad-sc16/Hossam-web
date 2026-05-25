@@ -31,14 +31,15 @@
 .close-link {
   text-decoration: none;
   font-size: 1.2rem;
+  right: 0.4rem;
   position: absolute;
   top: 0.4rem;
-  right: 0.4rem;
   font-family: "Inter", Roboto, Arial, Helvetica, sans-serif;
   background-color: white;
   padding: 0.1rem 0.4rem;
   border-radius: 40px;
   color: black;
+
 }
 
 main {
@@ -681,6 +682,9 @@ h3 {
   border: 0.1rem solid white;
 }
 
+.contact-footer-container p{
+  text-wrap: nowrap;
+}
 @media (max-width: 480px) {
   .logo-tooltip {
     display: none;
@@ -806,10 +810,15 @@ h3 {
     padding: 0.5rem 0;
     text-align: center;
   }
+  
 
   .description-content p {
     white-space: normal;
     text-align: center;
+  }
+
+  .inner-tools-container{
+      animation: spin 8s infinite linear;
   }
   .Learning-inner-container {
     border-left: none;

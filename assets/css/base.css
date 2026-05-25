@@ -17,6 +17,8 @@ html {
 body {
   margin: 0;
   padding-top: 4rem;
+  font-family:Roboto, Arial, Helvetica, sans-serif ;
+  min-height: 100dvh;
 }
 
 a:focus-visible {

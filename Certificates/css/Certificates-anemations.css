@@ -15,16 +15,6 @@
   }
 }
 
-@keyframes spin {
-  from {
-    translate: 0;
-  }
-
-  to {
-    translate: -100%;
-  }
-}
-
 .home-page-link {
   animation: fadeInLeft 0.8s ease-in-out;
 }
